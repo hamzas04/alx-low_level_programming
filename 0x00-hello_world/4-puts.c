@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- *Description - prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+ *Description - prints exactly.
  *
  * 
- *main - Entry point
+ * main - Entry point
  *
- * return: Always 0 (Success)
+ * Return : Always 0 . 
  */
 
 int main(void)
