@@ -12,8 +12,7 @@ int print_last_digit(int n)
 	int last_digit;
 
 	/* Get the absolute value of the number */
-	if (n < 0)
-		n = -n;
+	n = _abs(n);
 
 	/* Get the last digit */
 	last_digit = n % 10;
