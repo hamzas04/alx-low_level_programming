@@ -65,7 +65,10 @@ int print_sign(int n);
  * Return: The absolute value of n
  */
 
-int _abs(int n);
+int _abs(int n)
+{
+    return (n < 0 ? -n : n);
+}
 
 /**
  * print_last_digit - Prints the last digit of a number
