@@ -7,6 +7,7 @@
  *
  * Return: taille of the string
  */
+
 int _strlen(char *s)
 {
 	int taille = 0;
@@ -17,5 +18,5 @@ int _strlen(char *s)
 		s++;
 	}
 
-	return taille;
+	return (taille);
 }
