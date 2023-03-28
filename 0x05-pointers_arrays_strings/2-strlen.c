@@ -5,17 +5,17 @@
  *
  * @s: pointer to the string
  *
- * Return: length of the string
+ * Return: taille of the string
  */
 int _strlen(char *s)
 {
-    char len[] = *s;
-    int i = 0;
+    int taille = 0;
 
-    while (len[i] != '\0')
+    while (*s != '\0')
     {
-        i++;
+        taille++;
+        s++;
     }
 
-    return i;
+    return taille;
 }
