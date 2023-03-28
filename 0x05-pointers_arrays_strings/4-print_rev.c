@@ -10,15 +10,15 @@ void print_rev(char *s)
 	int len = 0;
 	int i;
 
-	while (s[len] != '\0')  // find the length of the string
+	while (s[len] != '\0')
 	{
 		len++;
 	}
 
-	for (i = len - 1; i >= 0; i--)  // iterate backwards through the string
+	for (i = len - 1; i >= 0; i--)
 	{
-		_putchar(s[i]);  // write the character to stdout
+		_putchar(s[i]);
 	}
 
-	_putchar('\n');  // write a newline character to stdout
+	_putchar('\n');
 }
