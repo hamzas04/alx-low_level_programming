@@ -7,24 +7,20 @@
  */
 char *leet(char *str)
 {
-	char *s = str;
-	char *leet_chars = "aAeEoOtTlL";
-	char *leet_nums = "4433007711";
 	int i, j;
+	char leet_chars[] = "aAeEoOtTlL";
+	char leet_nums[] = "4433007711";
 
-	while (*s != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		i = 0;
-		while (leet_chars[i] != '\0')
+		for (j = 0; j < 10; j++)
 		{
-			if (*s == leet_chars[i])
+			if (str[i] == leet_chars[j])
 			{
-				*s = leet_nums[i];
+				str[i] = leet_nums[j];
 				break;
 			}
-			i++;
 		}
-		s++;
 	}
 
 	return (str);
