@@ -1,5 +1,13 @@
 #ifndef MAIN_H
 #define MAIN_H
+/**
+ * _sqrt_recursive - recursively calculates the square root of n
+ * @n: number to calculate the square root of
+ * @i: possible square root
+ *
+ * Return: square root of n, -1 if n does not have a natural square root
+ */
+int _sqrt_recursive(int n, int i);
 
 int _putchar(char c);
 
