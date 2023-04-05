@@ -1,5 +1,16 @@
 #ifndef MAIN_H
 #define MAIN_H
+
+
+/**
+ * _check - checks if a number is prime recursively
+ * @n: the number to check
+ * @i: the divisor to check n against
+ *
+ * Return: 1 if n is prime, 0 otherwise
+ */
+int _check(int n, int i);
+
 /**
  * _sqrt_recursive - recursively calculates the square root of n
  * @n: number to calculate the square root of
