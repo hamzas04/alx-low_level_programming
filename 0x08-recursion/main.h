@@ -1,5 +1,21 @@
 #ifndef MAIN_H
 #define MAIN_H
+/**
+ * _is_palindrome_rec - recursively checks if a string is a palindrome
+ * @s: string to check
+ * @len: length of the string
+ *
+ * Return: 1 if the string is a palindrome, 0 otherwise
+ */
+int _is_palindrome_rec(char *s, int len);
+
+/**
+ * _strlen_rec - returns the length of a string
+ * @s: string to get length of
+ *
+ * Return: length of the string
+ */
+int _strlen_rec(char *s);
 
 
 /**
