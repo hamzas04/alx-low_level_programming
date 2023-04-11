@@ -11,26 +11,23 @@
  */
 int main(int argc, char *argv[])
 {
-    int sum = 0;  // initialize sum to 0
+    int sum = 0;
 
-    // iterate through all arguments, starting at index 1
     for (int i = 1; i < argc; i++)
     {
-        // check if the current argument is a positive integer
+
         for (char *p = argv[i]; *p; p++)
         {
             if (!isdigit(*p))
             {
-                printf("Error\n");  // print error message
-                return 1;          // exit with error status
+                printf("Error\n");
+                return 1;
             }
         }
 
-        // convert the current argument to an integer and add it to the sum
         sum += atoi(argv[i]);
     }
 
-    // print the sum and exit with success status
     printf("%d\n", sum);
     return 0;
 }
