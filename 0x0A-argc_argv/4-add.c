@@ -1,36 +1,39 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * main - adds positive numbers
- * @argc: the number of arguments
- * @argv: the array of arguments
+ * Adds positive numbers given as command-line arguments.
  *
- * Return: 0 on success, 1 on error
+ * @param argc The number of command-line arguments.
+ * @param argv An array of command-line argument strings.
+ *
+ * @returns 0 if successful, 1 if there is an error.
  */
 int main(int argc, char *argv[])
 {
+	int i;
 	int sum = 0;
 
-	for (int i = 1; i < argc; i++)
+	if (argc == 1)
 	{
-		char *arg = argv[i];
-		int j = 0;
-
-		while (arg[j])
-		{
-			if (arg[j] < '0' || arg[j] > '9')
-			{
-				printf("Error\n");
-				return 1;
-			}
-			j++;
-		}
-
-		sum += atoi(arg);
+		printf("Usage: %s <positive numbers...>\n", argv[0]);
+		return 1;
 	}
 
-	printf("%d\n", sum);
-	return (0);
+	for (i = 1; i < argc; i++)
+	{
+		int arg_value = atoi(argv[i]);
+
+		if (arg_value <= 0)
+		{
+			printf("Error\n");
+			return 1;
+		}
+
+		sum += arg_value;
+	}
+
+	printf("Sum: %d\n", sum);
+
+	return 0;
 }
