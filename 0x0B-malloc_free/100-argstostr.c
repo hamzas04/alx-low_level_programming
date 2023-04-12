@@ -3,12 +3,12 @@
 #include "main.h"
 
 /**
- * argstostr - concatenates all the arguments 
+ * argstostr - concatenates all the arguments
  * @ac: argument count
  * @av: argument vector
  *
  * Return: pointer to the concatenated string
- *	 NULL if ac == 0 or av == NULL or if memory 
+ *	 NULL if ac == 0 or av == NULL or if memory
  */
 char *argstostr(int ac, char **av)
 {
