@@ -8,7 +8,7 @@
  * @age: age of the dog
  * @owner: owner of the dog
  *
- * Return: pointer to the new dog object, or NULL if malloc fails
+ * Return: pointer to the new dog object, or NULL
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
