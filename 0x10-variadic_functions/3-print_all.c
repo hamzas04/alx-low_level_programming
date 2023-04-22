@@ -59,7 +59,7 @@ void print_all(const char * const format, ...)
 				printed = 1;
 				break;
 			default:
-				break;
+				continue;
 		}
 	}
 
